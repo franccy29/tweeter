@@ -1,0 +1,35 @@
+.new-tweet {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+form div {
+  font-family: 'Bungee', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  display: flex;
+  align-self: flex-start;
+}
+.counter{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+label {
+  display: flex;
+  align-self: center;
+}
+textarea {
+  width: 600px;
+  height: 70px;
+  background: transparent;
+  border: none;
+  border-bottom: 5px solid black;
+}

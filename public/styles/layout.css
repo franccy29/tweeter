@@ -10,14 +10,20 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
+main {
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color: #f4f1ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*

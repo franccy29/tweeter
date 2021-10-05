@@ -1,0 +1,10 @@
+header {
+  width: 100%;
+  height: 400px;
+  background-color: #b58a1f;
+  background-image: url(http://www.transparenttextures.com/patterns/ps-neutral.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
