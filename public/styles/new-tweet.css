@@ -3,6 +3,7 @@
   justify-content: center;
   flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
+  width: 70%;
 }
 form div {
   font-family: 'Bungee', sans-serif;
@@ -27,9 +28,14 @@ label {
   align-self: center;
 }
 textarea {
-  width: 600px;
-  height: 70px;
   background: transparent;
   border: none;
   border-bottom: 5px solid black;
+  height: 70px;
+  width: 100%;
+}
+
+#error {
+  border: 5px solid red;
+  color: red;
 }

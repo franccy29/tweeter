@@ -7,6 +7,8 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 1;
+  position: fixed;
+  top: 0;
 }
 nav div {
   display: flex;
