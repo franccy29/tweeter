@@ -46,20 +46,30 @@ const escape = function (str) {
   return div.innerHTML;
 };
 
+const offsetAnchor = () => {
+  if (location.hash.length !== 0) {
+    window.scrollTo(window.scrollX, window.scrollY - 1000);
+  }
+};
+
+
 
 $(() => {
   $("#sendATweet").submit((event) => {
     event.preventDefault();
     $.get("#tweet-text", () => {
       const text = $("#tweet-text").serialize();
-      if (text === null) {
+      const textTest = $("#tweet-text").val();
+      if (textTest === null) {
         alert("the text is null");
-      } else if (text.slice(5) === "") {
+      } else if (textTest === "") {
         $("#error").slideDown("fast", () => {
+          $('#error').empty();
           $('#error').append("the tweet is empty! tell us what you are thinking about!");
         });
-      } else if (text.slice(5).length > 140) {
+      } else if (textTest.length > 140) {
         $("#error").slideDown("fast", () => {
+          $('#error').empty();
           $('#error').append("the tweet is too long! stay in the 140 character randge!!");
         });
       } else {
@@ -72,6 +82,13 @@ $(() => {
       }
     });
   });
+
+  $(document).on('click', 'a[href^="#tweet-text"]', function(event) {
+    window.setTimeout(function() {
+      offsetAnchor();
+    }, 0);
+  });
+
   $("#error").slideUp("fast", () => {});
   loadTweets();
 });

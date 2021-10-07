@@ -10,19 +10,22 @@ nav {
   position: fixed;
   top: 0;
 }
-nav div {
+nav a {
   display: flex;
   flex-direction: column;
+  font-family: 'Bungee', sans-serif;
+  color: #FFFFFF;
+  text-decoration:none;
 }
 nav span {
   font-family: 'Bungee', sans-serif;
   margin: 1.5em;
   margin-bottom: 1%;
 }
-nav div span {
+nav a span {
   font-family: 'Source Sans Pro', sans-serif;
 }
-div .fa-angle-double-down{
+a .fa-angle-double-down{
   color: red;
   display: flex;
   justify-content: center;

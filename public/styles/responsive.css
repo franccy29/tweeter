@@ -1,0 +1,20 @@
+@media only screen and  (min-width: 1024px) {
+  #container {
+    float:right;
+    width:60%;
+    box-sizing:border-box;
+    margin:0;
+  }
+  .account {
+    float:left;
+    width:33.3%;
+    box-sizing:border-box;
+    margin-top:8em;
+  }
+  .account header{
+    margin-left:4em;
+  }
+  .account header div h2 {
+    padding-right: 7px;
+  }
+}
