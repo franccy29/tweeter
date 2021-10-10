@@ -1,3 +1,5 @@
+/* all the text area, the error pull down, the counter, button and textlabel area styling and centering */
+
 .new-tweet {
   display: flex;
   justify-content: center;

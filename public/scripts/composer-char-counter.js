@@ -1,3 +1,5 @@
+// the ltweet lenght counter and turning the counnter as red when more than 140 caracter is in the box
+
 /* eslint-disable no-undef */
 $(document).ready(() => {
   $("#tweet-text").keyup(() => {
